@@ -1,0 +1,54 @@
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "clear negative percentage divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 20px;
+  padding: 10px 50px 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #f5c189;
+}
+
+.calculator__answer {
+  font-size: 48px;
+  height: 48px;
+}
+
+.calculator__expression {
+  font-size: 30px;
+  height: 30px;
+}
+
+.calculator__button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.calculator__button:hover {
+  background-color: #fff;
+}
+
+.calculator__button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
