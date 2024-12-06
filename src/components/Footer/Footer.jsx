@@ -1,0 +1,21 @@
+import "./Footer.css";
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <a
+        href="https://github.com/nathanielDaley/javascript-calculator"
+        className="footer__link"
+        target="_blank"
+      >
+        <span
+          data-content="Developed by Nathaniel Daley"
+          aria-hidden="true"
+          className="footer__link-transition"
+        ></span>
+        Developed by Nathaniel Daley
+      </a>
+      <p className="footer__date">{new Date().getFullYear()}</p>
+    </footer>
+  );
+}

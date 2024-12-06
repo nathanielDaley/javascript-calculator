@@ -1,7 +1,17 @@
-.container {
+.app {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app__content {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
 }
